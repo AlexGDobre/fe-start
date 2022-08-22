@@ -10,29 +10,37 @@ body{
 header{
     padding: 20px 0;
     height: 78px;
+    width: 1440px;
 }
 .container{
-    width: 1440px;
     margin: 0 auto;
+}
+section div:first-of-type{
+    display: block;
+    /* padding: 80px 0px; */
 }
 .yellow{
     background: #FAC960;
     color: #8A6D2F; 
 }
 .yellow1{
-    height: 421px;
+    /* height: 421px; */
     padding-top: 91px;
+    padding-bottom: 60px;
     font-size: 44px;
 }
 .yellow2{
-    height: 313px;
-    padding-top: 58px;
+    /* height: 313px; */
+    padding: 58px 0;
     font-size: 37px;
 }
 .grey{
     background: rgba(242, 242, 242, 1);
     padding: 80px 0;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+}
+.mobile{
+    padding: 70px 0;
 }
 
 
@@ -86,7 +94,7 @@ p.phead{
 
 .main_blocks{
     width: 940px;
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
 }
 .text_block{
