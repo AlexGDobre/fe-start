@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox чет не работает в мазиле. на сколько я понял сейчас это правило для данного браузера не актуально*/
+}
 body{
     background: white;
 }
@@ -81,7 +85,10 @@ p{
     color: white;
     background: gray;
 }
-
+.h2_blocks{
+    width: 611px;
+    margin: 0 auto;
+}
 
 div.first_block{
     margin: 0 auto;
@@ -120,18 +127,17 @@ td img{
 }
 div.table{
     display: table;
-    width: 100%;
 }
 div.table>div.table_row div:first-child{
-    width: 150px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
-div.table>div.table_row div:nth-child(2){
+div.table>div.table_row > div:nth-child(2){
     /* width: 40%; */
+    padding-left: 40px;
 }
 div.table>div.table_row div:last-child{
-    padding-left: 50px;
-    width: 30%;
+    /* padding-left: 50px;
+    width: 30%; */
 }
 .table_row{
     display: table-row;
@@ -143,15 +149,16 @@ div.table>div.table_row div:last-child{
 
 div.last_cell{
     color: rgba(255, 190, 11, 1);
+    width: 250px;
 }
 div.before_arrow{
     color: initial;
 }
 div.before_arrow::before{
     content: "<";
-    font-size: 30px;
     float: left;
-}
+    font-size: 30px;
+} 
 
 .blue_block{
     background: rgba(0, 98, 255, 1);
@@ -159,15 +166,15 @@ div.before_arrow::before{
     text-align: center;
 }
 .block_in_blue{
-    max-width: 1200px;
-    width: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 .blue_block div:only-child{
     padding: 60px 0;
 }
 .blue_section{
     margin: 0 auto;
-    width: 90%;
+
     /* position: relative; */
     padding: 40px 0;
 }
@@ -203,12 +210,93 @@ section.blue_section div{
     padding: 50px 0;
 }
 
+div.rewiew_overflow{
+    overflow: hidden;
+    /* height: 230px; */
+    /* display: inline-block; */
+}
 .rewiew_block{
     height: 230px;
     text-align: left;
+    background: white;
+    /* float: left; */
+    margin: 0 16px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
 }
 
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;
+}
+
+div.rewiew_text{
+    padding: 59px 0;
+    padding-right: 16px;
+}
 .rewiew_text::before{
     content: url(img/cloud.png);
     float: left;
+    padding: 40px 16px 50px 16px;
+}
+
+.stars_bg{
+    display: inline-block;
+    /* content: url(img/Star.png); */
+    width: 117px;
+    height: 25px;
+    background-image: url(img/Star.png);
+    background-repeat: repeat-x;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rewiew_block h3{
+    display: inline-block;
+}
+.rewiew_block p{
+    width: 611px;
+}
+.rewiew_block h3::after{
+
+}
+
+footer{
+    padding: 80px 0;
+    text-align: center;
+}
+.footer_iphone{
+    width: 1200px;
+    margin: 0 auto;
+}
+div.footer_iphone img{
+    display: inline-block;
+    transform: scale(65%);
+    float: left;
+}
+#my_product_title{
+    padding: 130px 0;
+    text-align: left;
+    display: inline-block;
+    float: left;
+}
+#my_product_title h2{
+    color: rgba(34, 3, 228, 1);
+    margin-top: 16px;
+}
+#email{
+    margin: 0 auto;
+    width: 508px;;
+}
+#email input{
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    padding: 25px 0 25px 24px;
+    background: rgba(58, 134, 255, 0.2);
+    border: none;
+    margin-top: 40px;
+}
+#email button{
+    width: 100%;
 }
