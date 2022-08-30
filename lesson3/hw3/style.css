@@ -174,8 +174,6 @@ div.before_arrow::before{
 }
 .blue_section{
     margin: 0 auto;
-
-    /* position: relative; */
     padding: 40px 0;
 }
 section.blue_section div{
@@ -196,9 +194,13 @@ section.blue_section div{
     text-align: center;
     padding: 50px 0;
 }
+.video_block{
+    margin: 0 auto;
+    width: 1200px;
+}
 .video_block img{
     display: inline-block;
-    
+    float: right;
 }
 
 
@@ -211,7 +213,10 @@ section.blue_section div{
 }
 
 div.rewiew_overflow{
-    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
     /* height: 230px; */
     /* display: inline-block; */
 }
@@ -219,11 +224,24 @@ div.rewiew_overflow{
     height: 230px;
     text-align: left;
     background: white;
-    /* float: left; */
     margin: 0 16px;
+    position: absolute;
     border-radius: 20px;
     display: inline-block;
     box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
+}
+.rewiew_block1{
+    /* position: absolute; */
+    right: 915px;
+    opacity: 0.5;
+}
+.rewiew_block2{
+    position: static;
+    margin: 0 auto;
+}
+.rewiew_block3{
+    /* position: absolute; */
+    opacity: 0.5;
 }
 
 ::-webkit-scrollbar { /* chrome based */
