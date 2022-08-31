@@ -211,7 +211,7 @@ section.blue_section div{
 }
 
 div.rewiew_overflow{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -219,6 +219,7 @@ div.rewiew_overflow{
 .rewiew_block{
     width: 620px;
     height: 230px;
+    display: inline-block;
     text-align: left;
     background: white;
     margin: 0 auto;
@@ -228,13 +229,14 @@ div.rewiew_overflow{
 div.rewiew_overflow div.rewiew_block:first-child, 
 div.rewiew_overflow div.rewiew_block:last-child{
     position: absolute;
+    top: o;
     opacity: 0.5;
 }
 div.rewiew_overflow div:first-child{
-    left: -100px;
+    left: -400px;
 }
 div.rewiew_overflow div:last-child{
-    right: -100px;
+    right: -400px;
 }
 
 ::-webkit-scrollbar { /* chrome based */
