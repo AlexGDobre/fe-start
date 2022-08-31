@@ -206,42 +206,35 @@ section.blue_section div{
 
 .opinions_container{
     background: rgba(255, 190, 11, 1);
-    text-align: center;
-}
-.opinions_block{
     padding: 50px 0;
+    text-align: center;
 }
 
 div.rewiew_overflow{
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    overflow: auto;
-    /* height: 230px; */
-    /* display: inline-block; */
+    overflow: hidden;
 }
 .rewiew_block{
+    width: 620px;
     height: 230px;
     text-align: left;
     background: white;
-    margin: 0 16px;
-    position: absolute;
+    margin: 0 auto;
     border-radius: 20px;
-    display: inline-block;
     box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
 }
-.rewiew_block1{
-    /* position: absolute; */
-    right: 915px;
+div.rewiew_overflow div.rewiew_block:first-child, 
+div.rewiew_overflow div.rewiew_block:last-child{
+    position: absolute;
     opacity: 0.5;
 }
-.rewiew_block2{
-    position: static;
-    margin: 0 auto;
+div.rewiew_overflow div:first-child{
+    left: -100px;
 }
-.rewiew_block3{
-    /* position: absolute; */
-    opacity: 0.5;
+div.rewiew_overflow div:last-child{
+    right: -100px;
 }
 
 ::-webkit-scrollbar { /* chrome based */
@@ -269,14 +262,11 @@ div.rewiew_text{
     margin-right: 15px;
 }
 
-.rewiew_block h3{
+.rewiew_text h3{
     display: inline-block;
 }
 .rewiew_block p{
-    width: 611px;
-}
-.rewiew_block h3::after{
-
+    /* width: 611px; */
 }
 
 footer{
