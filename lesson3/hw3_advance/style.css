@@ -27,6 +27,11 @@ div.about{
 div.photo_block{
     position: relative;
     display: inline-block;
+    width: 209px;
+    height: 321px;
+}
+div.photo_block img{
+    position: absolute;
 }
 .text_inimg{
     background-color: rgba(0, 0, 0, 0.25);
