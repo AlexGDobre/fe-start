@@ -18,6 +18,7 @@ header{
 .container{
     padding: 37px 26px;
     max-width: 1512px;
+    width: 95%;
     margin: 0 auto;
 }
 .logo{
