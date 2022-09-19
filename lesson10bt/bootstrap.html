@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignCafé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<style>
+  :root{
+    --font-head: 'Ms Madi', cursive;
+  }
+</style>
+</head>
+
+<body style="font-family: 'Shadows Into Light', cursive;">
+
+  <header class="container-fluid" style="background-color: #668E68;">
+
+    <div class="container row text-start p-3 text-white mx-auto align-items-center" style="font-family: var(--font-head);">
+
+      <div class="col text-center fs-1">DesignCafé</div>
+
+      <div class="col row d-none d-lg-flex">
+        <div class="col">DesignCaféとは</div>
+        <div class="col">メニュー</div>
+        <div class="col">お問い合わせ</div>
+        <div class="col">お知らせ</div>
+      </div>
+
+      <div class="dropdown d-flex d-lg-none col text-end">
+        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="img/foods.png" alt="" width="20px" height="20px">
+        </button>
+        <ul class="dropdown-menu text-center border-none">
+          <li><a class="dropdown-item" href="#">DesignCaféとは</a></li>
+          <li><a class="dropdown-item" href="#">メニュー</a></li>
+          <li><a class="dropdown-item" href="#">お問い合わせ</a></li>
+          <li><a class="dropdown-item" href="#">お知らせ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="container-fluid" style="background: no-repeat center url(img/bg-coffe.png); background-size: cover;">
+    <div class="container row text-center mx-auto" style="height: 526px;">
+      <div class="col text-white fs-1" style="align-self: center;">Grand Open</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="grid text-center py-4">
+      <h2 class="fs-4">Menu</h2>
+      <p>メニュー</p>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <img 
+        class="rounded-circle border border-5 border-warning "
+        style="" 
+        src="img/drinks.png" alt="">
+        <div class="bg-light text-black h-20 py-3"
+        style="b">
+          Coffe
+        </div>
+      </div>
+      <div class="col">
+        <img class="rounded-circle border border-5 border-warning" src="img/cakes.png" alt="">
+      </div>
+      <div class="col">
+        <img class="rounded-circle border border-5 border-warning" src="img/foods.png" alt="">
+      </div>
+    </div>
+    <div class="btn-group" style="background-color: #668E68;">
+      <button type="button" class="btn text-white">詳しく見る</button>
+      <button class="btn text-white">></button>
+    </div>
+
+  </div>
+</body>
+</html>
