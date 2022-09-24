@@ -29,39 +29,41 @@
   footer{
    font-family: Georgia, 'Times New Roman', Times, serif;
   }
+  a{
+    color:white;
+  }
 </style>
 </head>
 
 <body style="font-family: 'Shadows Into Light', cursive;">
 
-  <header class="container-fluid" style="background-color: #668E68;">
+    
+      <nav class="navbar navbar-expand-lg p-0">
 
-    <div class="container row text-start p-3 text-white mx-auto align-items-center" style="font-family: var(--font-head);">
+        <div class="container-fluid" style="background-color: #668E68; font-family: Georgia, 'Times New Roman', Times, serif;">
 
-      <div class="col text-center fs-1">DesignCafé</div>
-
-      <div class="col row d-none d-lg-flex">
-        <div class="col">DesignCaféとは</div>
-        <div class="col">メニュー</div>
-        <div class="col">お問い合わせ</div>
-        <div class="col">お知らせ</div>
-      </div>
-
-      <div class="dropdown d-flex d-lg-none col text-end">
-        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="img/foods.png" alt="" width="20px" height="20px">
-        </button>
-        <ul class="dropdown-menu text-center border-none">
-          <li><a class="dropdown-item" href="#">DesignCaféとは</a></li>
-          <li><a class="dropdown-item" href="#">メニュー</a></li>
-          <li><a class="dropdown-item" href="#">お問い合わせ</a></li>
-          <li><a class="dropdown-item" href="#">お知らせ</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-  </header>
+          <a class="navbar-brand col-4 text-center text-white" href="#">DesignCafé</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">DesignCaféとは</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">メニュー</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">お問い合わせ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">お知らせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
   <div class="container-fluid" style="background: no-repeat center url(img/bg-coffe.png); background-size: cover;">
     <div class="container row text-center mx-auto" style="height: 526px;">
